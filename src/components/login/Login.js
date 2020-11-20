@@ -5,6 +5,7 @@ import Validate from "./Validate";
 
 
 function Login() {
+
     const {handleChange, handleSubmit, values,errors} = useForm(submit,Validate);
    
     function submit(){
@@ -16,7 +17,6 @@ function Login() {
             <div className="container d-flex justify-content-around">
                 <div className="col"></div>
                 <div className="col-sm-6 loginForm p-5 bg-white shadow">
-                    
                     <h2>Login</h2>
                     <form onSubmit={handleSubmit} noValidate>
                         <div className="form-group">
